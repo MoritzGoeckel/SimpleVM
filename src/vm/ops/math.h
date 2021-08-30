@@ -1,9 +1,11 @@
 
-/*
-// code rg int
+// op reg int
 void seti(Context& ctx, const Program& prg) {
-    ctx.gp[prg.getSize_t(ctx.pp + 4)] = prg.getInt(ctx.pp + 1 + 4);
+    ctx.gp[prg.getIdx(ctx.pp + idx_s)] = prg.getInt(ctx.pp + idx_s * 2);
+    ctx.pp += ctx.pp + idx_s * 2 + int_s;
 }
 
-void addi(Context& ctx, const Program& prg) { ctx.pp += 1; }
-*/
+// op reg reg
+void addi(Context& ctx, const Program& prg) {
+    // TODO
+}

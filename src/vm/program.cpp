@@ -25,6 +25,10 @@ void Program::putIdx(idx_t value) {
     *reinterpret_cast<idx_t*>(&data[data.size() - idx_s]) = value;
 }
 
-void Program::putInt(int_t value) {}
+void Program::putInt(int_t value) {
+    // TODO
+}
 
-void Program::putBool(bool_t value) {}
+void Program::putBool(bool_t value) {
+    // TODO
+}
