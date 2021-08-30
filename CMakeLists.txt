@@ -13,7 +13,10 @@ find_package(GTest REQUIRED)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(Tests
-  src/test/Basic.cpp
+  src/test/basic.cpp
+  src/vm/vm.cpp
+  src/vm/context.cpp
+  src/vm/program.cpp
 )
 
 target_link_libraries(Tests
